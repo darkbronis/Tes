@@ -160,7 +160,7 @@ def SEND_MESSAGE(op):
 		      group = client.getGroup(msg.to)
 		      mem = [contact.mid for contact in group.members]
 		      for mm in mem:
-		       xname = client.getContact(mm).displayName"\n"
+		       xname = client.getContact(mm).displayName+"\n"
 		       xlen = str(len(xname)+1)
 		       msg.contentType = 0
                        msg.text = "@"+xname+""
